@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat&family=Yatra+One&display=swap');
+
+* {
+   /* background-color: red; */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+} 
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+p{
+    font-size: 1.5rem;
+}
+/* nav design start */
+.navbar{
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.navbar .header h1{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.navbar .header a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 17px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: flex-end;
+
+}
+
+.nav a:hover {
+    background-color: black;
+    opacity: 50%;
+    
+}
+
+.nav a::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* nav design end */
+
+/* profile start */
+/* image control */
+.profile .imgUpper{
+    width: 150px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    float: right;
+}
+
+.profile .imgUpper:hover{
+    width: 160px;
+    transition: 3s;
+    transform: rotate(360deg);
+}
+
+.profile h3{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 2.5rem;
+
+    font-family: 'Yatra One', cursive;
+}
+
+.profile p{
+    text-align: justify;
+    padding: 0px 50px;
+    margin-top: -20px;
+}
+
+.profile .imgLower{
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    transition: 3s;
+    /* width: 160px; */
+    transform: translate(100px, 0);
+}
+
+.profile .imgLower:hover {
+    transition: 3s;
+    /* width: 160px; */
+    transform: translate(100px, 0);
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile end */
+
+/* start about me  */
+
+.about-me{
+    background-color: cadetblue;
+}
+
+.about-me .title p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Yatra One', cursive;
+    color: white;
+}
+
+.about-me-hr{
+    border: dotted 10px black;
+    border-bottom: none;
+    width: 100px;
+    margin-top: -30px;
+}
+
+.about-me .img-about-me img{
+
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 150px 0px 0px 30px;
+    border: 5px solid white;
+    display: inline-block;
+
+    float: left;
+}
+
+.about-me .des .des-data{
+    padding: 10px 40px;
+    color: white;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.about-me .des{
+    float: right;
+}
+
+.hr-aboutMe{
+    width: 90%;
+}
+
+.about-me .des p{
+    color: white;
+    padding: 0 30px;
+    font-size: 1.5rem;
+}
+
+.about-me .des p a{
+   
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cv-btn{
+    background-color: aquamarine;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    margin-left: 40%;
+}
+
+.cv-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* start professional skill */
+
+.professional-skill{
+
+    background-color: gray;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.professional-skill .card{
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 32%;
+}
+
+.professional-skill .card:hover{
+    box-shadow: 2px 4px 4px 4px black;
+}
+
+.professional-skill .card .card-title h1{
+    text-align: center;
+    font-size: 2rem ;
+}
+
+.professional-skill .card .card-des .date{
+    color: blue; 
+    font-size: .75rem;
+}
+
+.professional-skill .card .card-skill-des li{
+    list-style: none;
+    margin: 50px 0;
+    font-weight:bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.professional-skill .card .card-skill-des li::before{
+    content: '';
+    background-color: gray;
+    position: absolute;
+    width: 95%;
+    height: 20px;
+    left: 0;
+    top: calc(100% + 5px);
+    border-radius: 50px;
+}
+
+.professional-skill .card .card-skill-des li::after{
+    content: '';
+    background-color: gray;
+    position: absolute;
+    width: 0;
+    height: 20px;
+    left: 0;
+    top: calc(100% + 5px);
+    border-radius: 50px;
+
+
+    animation-duration: 3s;
+    animation-timing-function: case ease-in-out;
+    animation-delay: 1s;
+    /* animation-iteration-count: 2; */
+    /* animation-direction: forword; */
+    animation-fill-mode: forwards;
+    
+}
+
+ /* set animation for html */
+ .professional-skill .card .card-skill-des li.html::after{
+    animation-name: html;
+}
+
+@keyframes html {
+    to{
+        background-color: blue;
+        width: 90%;
+        opacity: 90%;
+    }
+}
+/* end */
+
+ /* set animation for css */
+ .professional-skill .card .card-skill-des li.css::after{
+    animation-name: css;
+}
+
+@keyframes css {
+    to{
+        background-color: green;
+        width: 85%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for bootstrap */
+.professional-skill .card .card-skill-des li.bs::after{
+    animation-name: bs;
+}
+
+@keyframes bs {
+    to{
+        background-color: midnightblue;
+        width: 85%;
+        opacity: 75%;
+    }
+}
+/* end */
+
+ /* set animation for js */
+ .professional-skill .card .card-skill-des li.js::after{
+    animation-name: js;
+}
+
+@keyframes js {
+    to{
+        background-color: orange;
+        width: 80%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+ /* set animation for ts */
+ .professional-skill .card .card-skill-des li.ts::after{
+    animation-name: ts;
+}
+
+@keyframes ts {
+    to{
+        background-color: mediumspringgreen;
+        width: 75%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+ /* set animation for react */
+ .professional-skill .card .card-skill-des li.react::after{
+    animation-name: react;
+}
+
+@keyframes react {
+    to{
+        background-color: crimson;
+        width: 85%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for sql */
+.professional-skill .card .card-skill-des li.sql::after{
+    animation-name: sql;
+}
+
+@keyframes sql {
+    to{
+        background-color: yellow;
+        width: 75%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for php */
+.professional-skill .card .card-skill-des li.php::after{
+    animation-name: php;
+}
+
+@keyframes php {
+    to{
+        background-color: chocolate;
+        width: 75%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for gh */
+.professional-skill .card .card-skill-des li.gh::after{
+    animation-name: gh;
+}
+
+@keyframes gh {
+    to{
+        background-color: khaki;
+        width: 85%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for web site design */
+.professional-skill .card .card-skill-des li.wdd::after{
+    animation-name: wdd;
+}
+
+@keyframes wdd {
+    to{
+        background-color: red;
+        width: 80%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+/* set animation for Android app development */
+.professional-skill .card .card-skill-des li.aad::after{
+    animation-name: aad;
+}
+
+@keyframes aad {
+    to{
+        background-color: aqua;
+        width: 75%;
+        opacity: 50%;
+    }
+}
+/* end */
+
+.professional-skill::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* end professional skill */
+
+/* start for achievement-contact */
+
+.achievement-contact{
+    background-color: cadetblue;
+    /* height: 700px; */
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.achievement-contact .title h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Yatra One', cursive;
+    color: white;
+
+}
+
+.ac-hr{
+    border: dotted 10px;
+    border-bottom: none;
+    width: 100px;
+    margin-top: -10px;
+}
+
+.achievement-contact .achievements{
+    padding: 20px 30px 20px 20px;
+}
+
+.achievement-contact .achievements .a-des p{
+    font-size: 1rem;
+    
+}
+
+.achievement-contact .contact{
+    padding: 20px 30px 20px 20px;
+}
+
+.achievement-contact .contact .c-des{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.achievement-contact .contact .c-des input{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.achievement-contact .contact .c-des textarea{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.achievement-contact .contact .c-des .contact-btn .btn{
+    background-color: teal;
+    border: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.achievement-contact .contact .c-des .contact-btn .btn:hover{
+    background-color: lightblue;
+}
+/* end for achievement-contact */
+
+/* start more-way-contact */
+
+.achievement-contact .more-way-contact{
+    padding: 20px 30px 20px 20px;
+}
+
+.achievement-contact .more-way-contact .mwc-des{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.achievement-contact .more-way-contact .mwc-des .more-contact-img{
+    width: 75px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.achievement-contact .more-way-contact .mwc-des .div1 {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.achievement-contact .more-way-contact .mwc-des a {
+    text-align: center;
+    margin: 10px; 
+}
+
+.achievement-contact .more-way-contact .mwc-des a:hover{
+    opacity: 50%;
+} 
+
+.achievement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* end more-way-contact */
+
+/* footer start here */
+.footer{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.footer .f-nav a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px ;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.copyright p{
+    color: white;
+    font-size: 1rem;
+    margin-top: -1px;
+    margin-right: 20px;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* footer end here */
